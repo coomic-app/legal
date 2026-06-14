@@ -1,68 +1,375 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legal - Your App Name</title>
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f9fafb;
-        color: #111827;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .container {
-        text-align: center;
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        max-width: 400px;
-        width: 90%;
-      }
-      h1 {
-        margin-bottom: 10px;
-      }
-      p {
-        margin-bottom: 30px;
-        color: #6b7280;
-      }
-      a {
-        display: block;
-        margin: 10px 0;
-        padding: 12px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 500;
-        background: #111827;
-        color: white;
-        transition: 0.2s;
-      }
-      a:hover {
-        background: #374151;
-      }
-      footer {
-        margin-top: 20px;
-        font-size: 12px;
-        color: #9ca3af;
-      }
-    </style>
+    <title>Smile Komik — Komik Edukasi Stres & Mindfulness untuk Remaja</title>
+    <meta
+      name="description"
+      content="Smile Komik adalah aplikasi komik digital edukatif tentang stres dan teknik mindfulness. Dikemas menarik dan mudah dipahami oleh remaja. Download gratis sekarang!"
+    />
+    <meta name="keywords" content="smile komik, komik edukasi, kesehatan mental, mindfulness, stres, remaja, komik digital, breathing exercise" />
+    <meta name="author" content="Smile Komik Team" />
+    <meta name="theme-color" content="#6C63FF" />
+
+    <meta property="og:title" content="Smile Komik — Komik Edukasi Stres & Mindfulness" />
+    <meta property="og:description" content="Baca komik edukatif tentang stres dan mindfulness. Dirancang khusus untuk remaja, gratis dan mudah digunakan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Legal Information</h1>
-      <p>Please review our policies below.</p>
+    <nav class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#" class="navbar__brand">
+          <img src="assets/logo.png" alt="Smile Komik Logo" class="navbar__logo" />
+          <span>Smile Komik</span>
+        </a>
 
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="ToS.html">Terms of Service</a>
-      <a href="delete-account.html">Delete Account</a>
+        <ul class="navbar__nav" id="navMenu">
+          <li><a href="#fitur" class="navbar__link">Fitur</a></li>
+          <li><a href="#screenshot" class="navbar__link">Tampilan</a></li>
+          <li><a href="#cara-kerja" class="navbar__link">Cara Pakai</a></li>
+          <li><a href="#tentang" class="navbar__link">Tentang</a></li>
+          <li>
+            <a href="#download" class="navbar__cta">
+              <svg class="btn-download__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download
+            </a>
+          </li>
+        </ul>
 
-      <footer>© 2026 S-mile</footer>
-    </div>
+        <button class="navbar__toggle" id="navToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="bg-orb bg-orb--1"></div>
+      <div class="bg-orb bg-orb--2"></div>
+      <div class="bg-orb bg-orb--3"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Tersedia untuk Android
+          </div>
+
+          <h1 class="hero__title">
+            Baca Komik,<br />
+            <span>Jaga Kesehatan Mentalmu</span>
+          </h1>
+
+          <p class="hero__desc">
+            Smile Komik menghadirkan kumpulan komik digital edukatif tentang <strong>stres</strong> dan teknik <strong>mindfulness</strong> — dikemas sederhana, menarik, dan mudah dipahami oleh
+            remaja.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#download" class="btn-download" id="heroDownloadBtn">
+              <svg class="btn-download__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download APK
+            </a>
+            <a href="#fitur" class="btn-secondary">
+              Pelajari Lebih Lanjut
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-value">100%</div>
+              <div class="hero__stat-label">Gratis</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-value">📚</div>
+              <div class="hero__stat-label">Komik Edukatif</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-value">🧘</div>
+              <div class="hero__stat-label">Latihan Pernapasan</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="floating-card floating-card--1">
+            <span class="floating-card__emoji">📖</span>
+            <span>Baca komik seru!</span>
+          </div>
+          <div class="floating-card floating-card--2">
+            <span class="floating-card__emoji">🧘</span>
+            <span>Latihan mindfulness</span>
+          </div>
+          <div class="floating-card floating-card--3">
+            <span class="floating-card__emoji">💆</span>
+            <span>Kelola stresmu</span>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-mockup__notch"></div>
+            <img src="assets/screenshoots/home.jpg" alt="Tampilan Home Smile Komik" class="phone-mockup__screen" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="fitur">
+      <div class="container">
+        <div class="features__header reveal">
+          <span class="section-label">Fitur Unggulan</span>
+          <h2 class="section-title">Semua yang Kamu Butuhkan<br />untuk <span class="text-gradient">Kesehatan Mental</span></h2>
+          <p class="section-subtitle mx-auto">Smile Komik bukan sekadar aplikasi baca komik. Kami menyediakan fitur-fitur yang dirancang untuk membantu remaja memahami dan mengelola stres.</p>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">📚</div>
+            <h3 class="feature-card__title">Komik Edukatif</h3>
+            <p class="feature-card__desc">Baca komik digital tentang stres dan mindfulness — dikemas dengan cerita menarik dan ilustrasi yang mudah dipahami remaja.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--secondary">🧘</div>
+            <h3 class="feature-card__title">Latihan Pernapasan</h3>
+            <p class="feature-card__desc">Fitur Wellness Hub dengan teknik Box Breathing dan 4-7-8 Breathing — lengkap dengan panduan visual dan timer otomatis.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--accent">📊</div>
+            <h3 class="feature-card__title">Pantau Stresmu</h3>
+            <p class="feature-card__desc">Catat tingkat stres harian dan lihat riwayatnya. Kenali pola stresmu dan kelola dengan lebih baik setiap hari.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--accent">🎨</div>
+            <h3 class="feature-card__title">Beragam Genre</h3>
+            <p class="feature-card__desc">Temukan komik dari berbagai genre — mulai dari slice of life, motivasi, hingga tips kesehatan mental yang dikemas dalam cerita visual.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🔖</div>
+            <h3 class="feature-card__title">Koleksi & Bookmark</h3>
+            <p class="feature-card__desc">Simpan komik favoritmu dan lanjutkan membaca kapan saja. Koleksi pribadimu selalu tersedia di rak buku digital.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon feature-card__icon--secondary">🔒</div>
+            <h3 class="feature-card__title">Privasi Terjaga</h3>
+            <p class="feature-card__desc">Baca tanpa akun (mode tamu) atau daftar untuk fitur lengkap. Data pribadimu aman dan tidak dibagikan ke pihak ketiga.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots" id="screenshot">
+      <div class="container">
+        <div class="screenshots__header reveal">
+          <span class="section-label">Tampilan Aplikasi</span>
+          <h2 class="section-title">Intip Tampilan<br /><span class="text-gradient">di Dalam Aplikasi</span></h2>
+          <p class="section-subtitle mx-auto">Desain yang bersih dan nyaman untuk pengalaman membaca terbaik.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="screenshots__carousel" id="screenshotCarousel">
+          <div class="screenshot-item">
+            <img src="/assets/screenshoots/home2.jpg" alt="Tampilan Home" srcset="" />
+            <div class="screenshot-item__label">Home</div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="./assets/screenshoots/detail-komik.jpg" alt="Tampilan Detail Komik" srcset="" />
+            <div class="screenshot-item__label">Detail Komik</div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="./assets/screenshoots/reader.jpg" alt="Tampilan Reader Komik" srcset="" />
+            <div class="screenshot-item__label">Baca Komik</div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="./assets/screenshoots/wellness.jpg" alt="Tampilan Wellness Hub" srcset="" />
+            <div class="screenshot-item__label">Wellness Hub</div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="./assets/screenshoots/breathing.jpg" alt="Tapilan Latihan Pernapasan" />
+            <div class="screenshot-item__label">Latihan Pernapasan</div>
+          </div>
+
+          <div class="screenshot-item">
+            <img src="./assets/screenshoots/profile.jpg" alt="Tampilan Profil" srcset="" />
+            <div class="screenshot-item__label">Profil</div>
+          </div>
+        </div>
+
+        <div class="screenshots__dots">
+          <button class="screenshots__dot active" aria-label="Screenshot 1"></button>
+          <button class="screenshots__dot" aria-label="Screenshot 2"></button>
+          <button class="screenshots__dot" aria-label="Screenshot 3"></button>
+          <button class="screenshots__dot" aria-label="Screenshot 4"></button>
+          <button class="screenshots__dot" aria-label="Screenshot 5"></button>
+          <button class="screenshots__dot" aria-label="Screenshot 6"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="cara-kerja">
+      <div class="container">
+        <div class="how-it-works__header reveal">
+          <span class="section-label">Cara Pakai</span>
+          <h2 class="section-title">Mulai dalam <span class="text-gradient">4 Langkah</span></h2>
+          <p class="section-subtitle mx-auto">Tidak perlu ribet. Download, buka, dan langsung baca!</p>
+        </div>
+
+        <div class="how-it-works__steps">
+          <div class="step-card">
+            <div class="step-card__number">1</div>
+            <h3 class="step-card__title">Download</h3>
+            <p class="step-card__desc">Download file APK dari halaman ini dan install di smartphone Android kamu.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__number">2</div>
+            <h3 class="step-card__title">Buka Aplikasi</h3>
+            <p class="step-card__desc">Langsung masuk sebagai tamu atau daftar akun untuk fitur lengkap.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__number">3</div>
+            <h3 class="step-card__title">Pilih Komik</h3>
+            <p class="step-card__desc">Jelajahi koleksi komik edukatif kami dan pilih yang menarik perhatianmu.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__number">4</div>
+            <h3 class="step-card__title">Baca & Relaks</h3>
+            <p class="step-card__desc">Nikmati bacaan dan coba fitur latihan pernapasan untuk ketenangan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="tentang">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__visual reveal">
+            <div class="about__image-container">
+              <img src="assets/screenshoots/ill.png" alt="Tentang Smile Komik" />
+            </div>
+          </div>
+
+          <div class="about__content reveal">
+            <span class="section-label">Tentang Aplikasi</span>
+            <h2 class="section-title">Kenapa <span class="text-gradient">Smile Komik</span>?</h2>
+            <p class="about__text">
+              Smile Komik adalah media inovatif yang dirancang untuk membantu remaja memahami kondisi stres dan memberikan solusi melalui teknik mindfulness. Kami percaya bahwa promosi kesehatan
+              mental bisa dikemas secara menyenangkan, tidak membosankan, dan bisa digunakan kapan saja.
+            </p>
+
+            <ul class="about__highlights">
+              <li class="about__highlight">
+                <span class="about__highlight-icon">✓</span>
+                <span>Konten dikurasi oleh writer terpilih — bukan platform UGC terbuka</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-icon">✓</span>
+                <span>Fitur latihan pernapasan (Box Breathing & 4-7-8) dengan panduan visual</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-icon">✓</span>
+                <span>Bisa digunakan tanpa registrasi — langsung baca sebagai tamu</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-icon">✓</span>
+                <span>Gratis tanpa iklan — fokus pada pengalaman baca yang nyaman</span>
+              </li>
+              <li class="about__highlight">
+                <span class="about__highlight-icon">✓</span>
+                <span>Catat dan pantau tingkat stres harian untuk self-awareness</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-cta" id="download">
+      <div class="container">
+        <div class="download-cta__card reveal">
+          <div class="download-cta__content">
+            <img src="assets/logo.png" alt="Smile Komik" class="download-cta__icon" />
+            <h2 class="download-cta__title">Download <span class="text-gradient">Smile Komik</span> Sekarang</h2>
+            <p class="download-cta__desc">Mulai jaga kesehatan mentalmu hari ini. Download gratis dan langsung baca komik edukatif tentang stres & mindfulness.</p>
+
+            <div class="download-cta__actions">
+              <!-- 
+              APK RELEASE GITHUB
+            -->
+              <a href="#" class="btn-download" id="ctaDownloadBtn">
+                <svg class="btn-download__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download APK (Android)
+              </a>
+            </div>
+
+            <p class="download-cta__version">Versi 1.0.0 &bull;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Smile Komik" />
+          <span>Smile Komik</span>
+        </div>
+
+        <ul class="footer__links">
+          <li><a href="#fitur" class="footer__link">Fitur</a></li>
+          <li><a href="#screenshot" class="footer__link">Tampilan</a></li>
+          <li><a href="#cara-kerja" class="footer__link">Cara Pakai</a></li>
+          <li><a href="#tentang" class="footer__link">Tentang</a></li>
+          <li><a href="./privacy.html" class="footer__link" target="_blank" rel="noopener">Kebijakan Privasi</a></li>
+          <li><a href="./ToS.html" class="footer__link" target="_blank" rel="noopener">Syarat & Ketentuan</a></li>
+          <li><a href="./delete-account.html" class="footer__link" target="_blank" rel="noopener">Hapus Akun</a></li>
+        </ul>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">&copy; 2026 Smile Komik. All rights reserved.</p>
+          <p class="footer__developer">Dikembangkan oleh <a href="mailto:official.smile.app@example.com"> Angellina Jesse Oktaviani & Mifthahul Aulia Fadlilah Azzahra </a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
