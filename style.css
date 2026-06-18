@@ -1,26 +1,21 @@
-/* ========================================
-   SMILE KOMIK — Landing Page Styles
-   ======================================== */
-
-/* ---------- CSS Variables ---------- */
 :root {
-  --primary: #6C63FF;
-  --primary-dark: #4B44CC;
-  --secondary: #FF6584;
-  --accent: #43CBFF;
-  --bg-dark: #0F0E17;
-  --bg-card: #1A1A2E;
-  --bg-card-hover: #252542;
-  --surface: #16213E;
-  --text-primary: #FFFFFE;
-  --text-secondary: #A7A9BE;
-  --text-muted: #72748C;
-  --gradient-hero: linear-gradient(135deg, #6C63FF 0%, #9B59B6 40%, #FF6584 100%);
-  --gradient-card: linear-gradient(145deg, rgba(108, 99, 255, 0.12) 0%, rgba(155, 89, 182, 0.08) 50%, rgba(255, 101, 132, 0.06) 100%);
-  --gradient-btn: linear-gradient(135deg, #6C63FF 0%, #9B59B6 50%, #FF6584 100%);
-  --gradient-text: linear-gradient(135deg, #6C63FF, #43CBFF);
-  --shadow-glow: 0 0 40px rgba(108, 99, 255, 0.3), 0 0 80px rgba(155, 89, 182, 0.15);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --primary: #6c63ff;
+  --primary-dark: #4b44cc;
+  --secondary: #ff6584;
+  --accent: #43cbff;
+  --bg-dark: #f6f8ff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f3ff;
+  --surface: #eaf0ff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #545a73;
+  --text-muted: #7a8099;
+  --gradient-hero: linear-gradient(135deg, #6c63ff 0%, #9b59b6 40%, #ff6584 100%);
+  --gradient-card: linear-gradient(145deg, rgba(108, 99, 255, 0.08) 0%, rgba(155, 89, 182, 0.05) 50%, rgba(255, 101, 132, 0.04) 100%);
+  --gradient-btn: linear-gradient(135deg, #6c63ff 0%, #9b59b6 50%, #ff6584 100%);
+  --gradient-text: linear-gradient(135deg, #6c63ff, #43cbff);
+  --shadow-glow: 0 0 36px rgba(108, 99, 255, 0.22), 0 0 72px rgba(155, 89, 182, 0.12);
+  --shadow-card: 0 10px 30px rgba(26, 26, 46, 0.08);
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -154,16 +149,23 @@ img {
 .bg-orb--3 {
   width: 300px;
   height: 300px;
-  background: #9B59B6;
+  background: #9b59b6;
   top: 50%;
   left: 30%;
   animation: orbFloat 12s ease-in-out infinite 2s;
 }
 
 @keyframes orbFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -30px) scale(1.05); }
-  66% { transform: translate(-20px, 20px) scale(0.95); }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
 }
 
 /* ---------- Navbar ---------- */
@@ -179,9 +181,9 @@ img {
 }
 
 .navbar.scrolled {
-  background: rgba(15, 14, 23, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px) saturate(1.5);
-  border-bottom: 1px solid rgba(108, 99, 255, 0.15);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.2);
   padding: 12px 0;
 }
 
@@ -318,13 +320,20 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #22C55E;
+  background: #22c55e;
   animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
 }
 
 .hero__title {
@@ -380,7 +389,7 @@ img {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
   opacity: 0;
   transition: var(--transition);
 }
@@ -495,7 +504,7 @@ img {
   justify-content: center;
   gap: 16px;
   padding: 40px 24px;
-  background: linear-gradient(180deg, #1A1A2E 0%, #16213E 100%);
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--surface) 100%);
   border-radius: 37px;
   text-align: center;
 }
@@ -522,9 +531,9 @@ img {
 .floating-card {
   position: absolute;
   padding: 12px 18px;
-  background: rgba(26, 26, 46, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(108, 99, 255, 0.2);
+  border: 1px solid rgba(108, 99, 255, 0.25);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -559,8 +568,13 @@ img {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 /* ---------- Features Section ---------- */
@@ -728,7 +742,7 @@ img {
   left: 0;
   right: 0;
   padding: 16px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -901,7 +915,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #22C55E;
+  color: #22c55e;
   font-size: 0.8rem;
   margin-top: 2px;
 }
@@ -1053,7 +1067,9 @@ img {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .reveal.visible {
@@ -1134,7 +1150,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(15, 14, 23, 0.97);
+    background: rgba(246, 248, 255, 0.97);
     backdrop-filter: blur(20px);
     flex-direction: column;
     align-items: center;
